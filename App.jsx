@@ -1,5 +1,6 @@
 import './App.css'
 import { Stopwatch } from './Stopwatch.jsx'
+import { DigitalClock } from './DigitalClock.jsx'
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <><Stopwatch/>
+    <DigitalClock/>
     </>
   )
 }

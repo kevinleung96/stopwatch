@@ -29,7 +29,7 @@ export const Stopwatch = () => {
     }
 
     const padZero = (number) =>{
-        return String(number).length > 1 ? number : '0' + number;
+        return number > 9 ? number : '0' + number;
     }
 
     const formatTime = () =>{
@@ -41,7 +41,8 @@ export const Stopwatch = () => {
     }
 
   return (          
-            <div className="stopWatch">
+            <div className="container">
+                <h1 style={{color:'wheat'}}>Stop Watch</h1>
                 <div className='display'>{formatTime()}</div>
                 <div className="controls">
                     <button onClick={start} className='start-btn'>Start</button>

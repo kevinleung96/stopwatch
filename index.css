@@ -4,16 +4,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url(./mountain.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
-.stopWatch{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid;
     border-radius: 50px;
-    background-color: wheat;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     padding: 30px;  
+    margin: 50px;
    
 
 }
@@ -85,7 +91,7 @@ body {
 
 /* Large screens (desktops) */
 @media (min-width: 1200px) {
-    .display {
+    .display, .digitalClock {
         font-size: 6rem;
     }
 
@@ -98,7 +104,7 @@ body {
 
 /* Medium screens (tablets) */
 @media (min-width: 768px) and (max-width: 1199px) {
-    .display {
+    .display,.digitalClock {
         font-size: 4rem;
     }
 
@@ -111,7 +117,7 @@ body {
 
 /* Small screens (phones) */
 @media (max-width: 600px) {
-    .display {
+    .display, .digitalClock {
         font-size: 3rem;
     }
 
@@ -124,7 +130,7 @@ body {
 
 /* Extra small screens (portrait phones) */
 @media (max-width: 400px) {
-    .display {
+    .display,.digitalClock {
         font-size: 2.5rem;
     }
 
