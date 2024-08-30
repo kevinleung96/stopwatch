@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopWatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: wheat;
+    padding: 30px;  
+   
+
+}
+
+.display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(262, 85%, 11%);
+    text-shadow: 2px 2px 2px hsl(263, 92%, 5%);
+    margin-bottom: 25px;
+}
+
+.controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border:2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: wheat;
+    transition: background-color 0.5s ease;
+}
+
+.controls button:focus {
+    outline: 3px solid white;
+}
+
+.start-btn{
+    background-color: hsl(120, 90%, 25%);
+}
+
+.start-btn:hover{
+    background-color: hsl(120, 90%, 35%);
+}
+
+.start-btn:active{
+    background-color: hsl(120, 90%, 45%);
+}
+
+.stop-btn{
+    background-color: hsl(7, 90%, 25%);
+}
+
+.stop-btn:hover{
+    background-color: hsl(7, 90%, 35%);
+}
+
+.stop-btn:active{
+    background-color: hsl(7, 90%, 45%);
+}
+
+.reset-btn{
+    background-color:hsl(236, 90%, 25%);
+}
+
+.reset-btn:hover{
+    background-color: hsl(236, 90%, 35%);
+}
+
+.reset-btn:active{
+    background-color: hsl(236, 90%, 45%);
+}
+
+
+/* Media Queries */
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    .display {
+        font-size: 6rem;
+    }
+
+    .controls button {
+        font-size: 1.75rem;
+        padding: 12px 24px;
+        min-width: 150px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .display {
+        font-size: 4rem;
+    }
+
+    .controls button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        min-width: 125px;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    .display {
+        font-size: 3rem;
+    }
+
+    .controls button {
+        font-size: 1rem;
+        padding: 8px 16px;
+        min-width: 100px;
+    }
+}
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 400px) {
+    .display {
+        font-size: 2.5rem;
+    }
+
+    .controls button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        min-width: 90px;
+    }
+}
